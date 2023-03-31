@@ -7,3 +7,24 @@
 html {
     scroll-behavior: smooth;
 }
+
+body{
+    background-color: #FFF;
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+h2{
+    color: #003764;
+    font-weight: 900;
+}
+
+h3{
+    color: #FE5D06;
+    font-weight: 700;
+}
+
+h4{
+    color: black;
+}
