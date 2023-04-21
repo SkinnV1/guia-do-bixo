@@ -15,11 +15,15 @@ body{
 }
 
 ul{
-    list-style: none;
+    /* list-style: none; */
     
 }
 
 ul li{
+    margin: .5rem;
+    text-indent: .5rem;
+}
+ol li{
     margin: .5rem;
     text-indent: .5rem;
 }
