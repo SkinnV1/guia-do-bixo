@@ -20,6 +20,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 
 nav{
@@ -35,9 +36,13 @@ header > img{
     margin-right: auto;
 }
 
+
+
 #introducao{
     background-color: #f9f3ef;
     padding: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .intro {
@@ -45,27 +50,29 @@ header > img{
     background-color: #fff;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 70%;
+    padding: 2rem;
 }
 
 .intro > section{
     width: 60%;
-    border: solid;
+    margin-left: 2rem;
 }
 
 .intro > aside{
     height: fit-content;
     width: 12rem;
     margin: auto;
+    margin-right: 3rem;
+    border: solid;
     box-shadow: 10px 10px 0px 0px rgba(0,41,75,1);
     -webkit-box-shadow: 10px 10px 0px 0px rgba(0,41,75,1);
     -moz-box-shadow: 10px 10px 0px 0px rgba(0,41,75,1);
-    border: solid;
 }
 
 ul{
     /* list-style: none; */
-    
+    border: solid;
 }
 
 
@@ -84,11 +91,15 @@ h2, h3, h4{
 
 h1{
     text-align: center;
+    color: #000;
 }
 
 h1, h2{
-    color: #003764;
-    font-weight: 900;
+    font-weight: 400;
+}
+
+h2{
+    color: #00294b;
 }
 
 h3{
@@ -102,7 +113,6 @@ h4{
 
 p{
     margin: .5rem;
-    text-indent: .5rem;
     font-weight: 400;
 }
 
