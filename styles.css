@@ -6,13 +6,31 @@
 
 html {
     scroll-behavior: smooth;
-    width: fit-content;
 }
-
 
 body{
     background-color: #FFF;
     font-family: 'Inter', sans-serif;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h3{
+    color: #003764;
+    font-size: 25px;
+    margin-block: 25px;
+    font-weight: 600;
+}
+h4{
+    color: black;
+}
+
+h5{
+    font-size: 20px;
+    margin-bottom: 25px;
 }
 
 header{
@@ -25,95 +43,121 @@ header{
 
 nav{
     background-color: #ff7f40;
-    height: 2rem;
+    height: 120px;
 }
 
 header > img{
     max-width: 100%;
     height: auto;
-    padding-top: 1rem;
-    margin-left: auto;
-    margin-right: auto;
+    padding-top: 30px;
 }
-
-
 
 #introducao{
     background-color: #f9f3ef;
-    padding: 1rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 46px;
+    padding-bottom: 64px;
 }
 
 .intro {
     display: flex;
     background-color: #fff;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    padding: 2rem;
+    margin-inline: 250px;
+    padding: 4vh 3vw;
 }
 
 .intro > section{
     width: 60%;
-    margin-left: 2rem;
+    margin-block: 68px;
+    margin-inline-start: 10px;
 }
 
 .intro > aside{
-    height: fit-content;
-    width: 12rem;
+    background-color: #f9f3ef;
+    padding-block-start: 5rem;
+    padding: 137px 40px 37px 30px;
+    height: 333px;
+    width: 333px;
     margin: auto;
-    margin-right: 3rem;
     border: solid;
     box-shadow: 10px 10px 0px 0px rgba(0,41,75,1);
     -webkit-box-shadow: 10px 10px 0px 0px rgba(0,41,75,1);
     -moz-box-shadow: 10px 10px 0px 0px rgba(0,41,75,1);
 }
 
+#curso{
+    margin-inline: 250px;
+    margin-block: 54px;
+}
+
 ul{
-    /* list-style: none; */
-    border: solid;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 
 ul li{
-    margin: .5rem;
-    text-indent: .5rem;
+    justify-items: center;
+    border: solid;
+    height: 230px;
+    width: 400px;
 }
+
+#curso ul li{
+    background-color: #f9f3ef;
+    height: 230px;
+    width: 400px;
+    margin: 40px 30px 30px 30px;
+    padding: 40px 25px;
+    border: solid;
+    box-shadow: 10px 10px 0px 0px #00294b;
+    -webkit-box-shadow: 10px 10px 0px 0px #00294b;
+    -moz-box-shadow: 10px 10px 0px 0px #00294b;
+}
+
+#curso figure{
+    display: flex;
+    margin-block: 25px;
+    align-content: space-between;
+}
+
 ol li{
     margin: .5rem;
     text-indent: .5rem;
 }
 
-h2, h3, h4{
-    padding: 1rem;
-}
 
-h1{
-    text-align: center;
+
+
+#curso h2{
     color: #000;
+    margin-block: 34px;
+
 }
 
-h1, h2{
-    font-weight: 400;
+.ppc{
+    border: 5px black solid;
+    background-color: white;
+    margin-block: 30px;
+    height: 60px;
+    width: 200px;
+    box-shadow: 10px 10px 0px 0px rgba(0,41,75,1);
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(0,41,75,1);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(0,41,75,1);
 }
 
-h2{
-    color: #00294b;
-}
-
-h3{
-    color: #FE5D06;
+.ppc a {
+    text-decoration-line: none;
+    display: block;
+    font-size: 20px;
     font-weight: 700;
 }
 
-h4{
-    color: black;
-}
 
-p{
-    margin: .5rem;
+p, a{
     font-weight: 400;
+    font-size: 17px;
+    color: #000;
 }
 
 .siglas p{
