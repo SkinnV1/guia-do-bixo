@@ -6,13 +6,75 @@
 
 html {
     scroll-behavior: smooth;
-    width: fit-content;
 }
-
 
 body{
     background-color: #FFF;
     font-family: 'Inter', sans-serif;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h3{
+    color: #003764;
+    font-size: 25px;
+    margin-block: 25px;
+    font-weight: 600;
+}
+h4{
+    color: black;
+}
+
+h5{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+h6{
+    color: gray;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+p, a{
+    font-weight: 400;
+    font-size: 17px;
+    color: #000;
+}
+
+ul{
+    list-style: none;
+    display: grid;
+    justify-items: center;
+    margin-block: 2.12rem;
+}
+
+ul li{
+    background-color: #f9f3ef;
+    height: 230px;
+    width: 400px;
+    padding: 40px 25px;
+    border: solid;
+    box-shadow: 10px 10px 0px 0px #00294b;
+    -webkit-box-shadow: 10px 10px 0px 0px #00294b;
+    -moz-box-shadow: 10px 10px 0px 0px #00294b;
+}
+
+a{
+    text-decoration-line: none;
+    display: block;
+    height: 100%;
+    
+    font-family: 'inter';
+}
+
+ol li{
+    margin: .5rem;
+    text-indent: .5rem;
 }
 
 header{
@@ -24,92 +86,134 @@ header{
 
 nav{
     background-color: #ff7f40;
-    height: 2rem;
+    height: 120px;
 }
 
 header > img{
     max-width: 100%;
     height: auto;
-    padding-top: 1rem;
-    margin-left: auto;
-    margin-right: auto;
+    padding-top: 30px;
 }
 
-#introducao{
-    background-color: #f9f3ef;
-    padding: 1rem;
+#introducao, #siglas{
+    
+    padding-top: 46px;
+    padding-bottom: 64px;
 }
 
 .intro {
     display: flex;
     background-color: #fff;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+    margin-inline: 10vw;
+    padding: 4vh 3vw;
 }
 
 .intro > section{
     width: 60%;
-    border: solid;
+    margin-block: 68px;
+    margin-inline-start: 10px;
 }
 
 .intro > aside{
-    height: fit-content;
-    width: 12rem;
+    background-color: #f9f3ef;
+    padding-block-start: 5rem;
+    padding: 137px 40px 37px 30px;
+    height: 333px;
+    width: 333px;
     margin: auto;
+    border: solid;
     box-shadow: 10px 10px 0px 0px rgba(0,41,75,1);
     -webkit-box-shadow: 10px 10px 0px 0px rgba(0,41,75,1);
     -moz-box-shadow: 10px 10px 0px 0px rgba(0,41,75,1);
-    border: solid;
 }
 
-ul{
-    /* list-style: none; */
-    
+#curso{
+    margin-inline: 10vw;
+    margin-block: 54px;
 }
 
-
-ul li{
-    margin: .5rem;
-    text-indent: .5rem;
-}
-ol li{
-    margin: .5rem;
-    text-indent: .5rem;
+#curso ul{
+    height: 35rem;
+    gap: 10% 0%;
+    grid-template-columns: repeat(3, 1fr);
 }
 
-h2, h3, h4{
-    padding: 1rem;
+#curso figure{
+    display: flex;
+    margin-block: 25px;
+    align-content: space-between;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
 }
 
-h1{
-    text-align: center;
+#curso h2{
+    color: #000;
+    margin-block: 34px;
 }
 
-h1, h2{
-    color: #003764;
-    font-weight: 900;
+.botao{
+    border: black solid;
+    background-color: white;
+    margin-block: 30px;
+    height: 60px;
+    width: 200px;
+    box-shadow: 10px 10px 0px 0px rgba(0,41,75,1);
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(0,41,75,1);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(0,41,75,1);
 }
 
-h3{
-    color: #FE5D06;
+.botao a {
+    text-decoration-line: none;
+    display: block;
+    font-size: 20px;
     font-weight: 700;
+    height: 100%;
+    padding-block: 7%;
+    font-family: 'inter';
 }
 
-h4{
-    color: black;
+#siglas {
+    height: fit-content;
 }
 
-p{
-    margin: .5rem;
-    text-indent: .5rem;
-    font-weight: 400;
+#siglas ul{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem 0%;
 }
 
-.siglas p{
-    text-indent: 0;
+#siglas ul li{
+    background-color: #fff;
+    height: 28rem;
+    width: 18vw;
+    padding: 1.3rem;
+    box-shadow: none;
 }
 
-.siglas p strong{
-    
+#siglas a{
+    padding-block: 0;
+}
+
+#siglas h5{
+    margin: 0;
+}
+
+@media only screen and (max-width: 1600px) {
+    ul{
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 2.12rem;
+        gap: 5% 0;
+        height: 50rem;
+    }
+
+    #siglas ul{
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 2.12rem;
+        gap: 5% 0;
+        height: 50rem;
+    }
 }
