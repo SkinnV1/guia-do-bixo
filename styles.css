@@ -33,6 +33,13 @@ h5{
     margin-bottom: 25px;
 }
 
+h6{
+    color: gray;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
 p, a{
     font-weight: 400;
     font-size: 17px;
@@ -42,11 +49,8 @@ p, a{
 ul{
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    gap: 10% 0%;
     margin-block: 2.12rem;
-    height: 35rem;
 }
 
 ul li{
@@ -63,10 +67,8 @@ ul li{
 a{
     text-decoration-line: none;
     display: block;
-    font-size: 20px;
-    font-weight: 400;
     height: 100%;
-    padding-block: 7%;
+    
     font-family: 'inter';
 }
 
@@ -130,6 +132,11 @@ header > img{
     margin-block: 54px;
 }
 
+#curso ul{
+    height: 35rem;
+    gap: 10% 0%;
+    grid-template-columns: repeat(3, 1fr);
+}
 
 #curso figure{
     display: flex;
@@ -167,20 +174,29 @@ header > img{
 }
 
 #siglas {
-    height: 160rem;
+    height: fit-content;
 }
 
 #siglas ul{
     grid-template-columns: repeat(4, 1fr);
+    gap: 3rem 0%;
 }
 
 #siglas ul li{
-    height: 25rem;
-    width: 17vw;
     background-color: #fff;
+    height: 28rem;
+    width: 18vw;
+    padding: 1.3rem;
+    box-shadow: none;
 }
 
+#siglas a{
+    padding-block: 0;
+}
 
+#siglas h5{
+    margin: 0;
+}
 
 @media only screen and (max-width: 1600px) {
     ul{
