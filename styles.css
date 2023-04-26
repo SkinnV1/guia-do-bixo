@@ -33,12 +33,53 @@ h5{
     margin-bottom: 25px;
 }
 
+p, a{
+    font-weight: 400;
+    font-size: 17px;
+    color: #000;
+}
+
+ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 10% 0%;
+    margin-block: 2.12rem;
+    height: 35rem;
+}
+
+ul li{
+    background-color: #f9f3ef;
+    height: 230px;
+    width: 400px;
+    padding: 40px 25px;
+    border: solid;
+    box-shadow: 10px 10px 0px 0px #00294b;
+    -webkit-box-shadow: 10px 10px 0px 0px #00294b;
+    -moz-box-shadow: 10px 10px 0px 0px #00294b;
+}
+
+a{
+    text-decoration-line: none;
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    height: 100%;
+    padding-block: 7%;
+    font-family: 'inter';
+}
+
+ol li{
+    margin: .5rem;
+    text-indent: .5rem;
+}
+
 header{
     background-color: #fe5d06;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
 }
 
 nav{
@@ -52,8 +93,8 @@ header > img{
     padding-top: 30px;
 }
 
-#introducao{
-    background-color: #f9f3ef;
+#introducao, #siglas{
+    
     padding-top: 46px;
     padding-bottom: 64px;
 }
@@ -61,7 +102,7 @@ header > img{
 .intro {
     display: flex;
     background-color: #fff;
-    margin-inline: 250px;
+    margin-inline: 10vw;
     padding: 4vh 3vw;
 }
 
@@ -85,58 +126,27 @@ header > img{
 }
 
 #curso{
-    margin-inline: 250px;
+    margin-inline: 10vw;
     margin-block: 54px;
 }
 
-ul{
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-
-ul li{
-    justify-items: center;
-    border: solid;
-    height: 230px;
-    width: 400px;
-}
-
-#curso ul li{
-    background-color: #f9f3ef;
-    height: 230px;
-    width: 400px;
-    margin: 40px 30px 30px 30px;
-    padding: 40px 25px;
-    border: solid;
-    box-shadow: 10px 10px 0px 0px #00294b;
-    -webkit-box-shadow: 10px 10px 0px 0px #00294b;
-    -moz-box-shadow: 10px 10px 0px 0px #00294b;
-}
 
 #curso figure{
     display: flex;
     margin-block: 25px;
     align-content: space-between;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
 }
-
-ol li{
-    margin: .5rem;
-    text-indent: .5rem;
-}
-
-
-
 
 #curso h2{
     color: #000;
     margin-block: 34px;
-
 }
 
-.ppc{
-    border: 5px black solid;
+.botao{
+    border: black solid;
     background-color: white;
     margin-block: 30px;
     height: 60px;
@@ -146,24 +156,48 @@ ol li{
     -moz-box-shadow: 10px 10px 0px 0px rgba(0,41,75,1);
 }
 
-.ppc a {
+.botao a {
     text-decoration-line: none;
     display: block;
     font-size: 20px;
     font-weight: 700;
+    height: 100%;
+    padding-block: 7%;
+    font-family: 'inter';
+}
+
+#siglas {
+    height: 160rem;
+}
+
+#siglas ul{
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#siglas ul li{
+    height: 25rem;
+    width: 17vw;
+    background-color: #fff;
 }
 
 
-p, a{
-    font-weight: 400;
-    font-size: 17px;
-    color: #000;
-}
 
-.siglas p{
-    text-indent: 0;
-}
+@media only screen and (max-width: 1600px) {
+    ul{
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 2.12rem;
+        gap: 5% 0;
+        height: 50rem;
+    }
 
-.siglas p strong{
-    
+    #siglas ul{
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 2.12rem;
+        gap: 5% 0;
+        height: 50rem;
+    }
 }
