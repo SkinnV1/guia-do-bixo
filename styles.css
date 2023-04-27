@@ -16,6 +16,7 @@ body{
 h2{
     font-size: 30px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 h3{
@@ -26,6 +27,7 @@ h3{
 }
 h4{
     color: black;
+    font-size: 25px;
 }
 
 h5{
@@ -198,6 +200,37 @@ header > img{
     margin: 0;
 }
 
+.grupos-extensao{
+    background-color: #ff7f40;
+    height: 35rem;
+    width: 100%;
+    padding-inline: 10vw;
+}
+
+.grupos-extensao ul{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1%;
+    position:absolute
+}
+
+.grupos-extensao ul li{
+    width: fit-content;
+    height: 20rem;
+    padding: 1rem;
+}
+
+.grupos-extensao li p{
+ font-size: 13px;
+}
+
+.ic ul{
+    display: flex;
+}
+
+.ic ul li{
+    height: fit-content;
+}
+
 @media only screen and (max-width: 1600px) {
     #curso ul{
         list-style: none;
@@ -213,7 +246,15 @@ header > img{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         margin-bottom: 2.12rem;
-        gap: 0;
+        gap: 1%;
         height: fit-content;
+    }
+
+    #siglas ul li{
+        background-color: #fff;
+        height: 28rem;
+        width: 24vw;
+        padding: 1.3rem;
+        box-shadow: none;
     }
 }
