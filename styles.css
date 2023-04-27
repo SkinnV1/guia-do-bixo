@@ -231,6 +231,44 @@ header > img{
     height: fit-content;
 }
 
+.comida-ufscar{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+    gap: 1%;
+    box-shadow: none;
+}
+
+.comida-ufscar li{
+    background-color: white;
+}
+
+.ru{
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    grid-column-end: 2;
+
+    height: fit-content;
+}
+
+.pq{
+    grid-row-end: 2;
+
+    grid-column-start: 2;
+    grid-column-end: 4;
+    width: fit-content;
+}
+
+.lu{
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    grid-column-start: 2;
+    grid-column-end: 4;
+    width: fit-content;
+}
+
 @media only screen and (max-width: 1600px) {
     #curso ul{
         list-style: none;
