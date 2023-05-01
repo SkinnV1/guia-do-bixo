@@ -17,6 +17,7 @@ h2{
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
+    margin-block: 34px;
 }
 
 h3{
@@ -42,6 +43,11 @@ h6{
     margin-bottom: 1rem;
 }
 
+#calourada h6{
+    color: #ff7f40;
+    margin-top: 1rem;
+}
+
 p, a{
     font-weight: 400;
     font-size: 17px;
@@ -64,6 +70,22 @@ ul li{
     box-shadow: 10px 10px 0px 0px #00294b;
     -webkit-box-shadow: 10px 10px 0px 0px #00294b;
     -moz-box-shadow: 10px 10px 0px 0px #00294b;
+}
+
+button{
+    border: black solid;
+    background-color: white;
+}
+
+button a{
+    text-decoration-line: none;
+    display: block;
+    font-size: 23px;
+    font-weight: 700;
+    height: 100%;
+    width: 100%;
+    padding-block: 10%;
+    font-family: 'inter';
 }
 
 a{
@@ -135,8 +157,8 @@ header > img{
 }
 
 #curso ul{
-    height: 35rem;
-    gap: 10% 0%;
+    height: fit-content;
+    gap: 5vh 0%;
     grid-template-columns: repeat(3, 1fr);
 }
 
@@ -225,10 +247,21 @@ header > img{
 
 .ic ul{
     display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 2vw;
 }
 
 .ic ul li{
-    height: fit-content;
+    padding: 0;
+    height: 100px;
+}
+
+.ic li a{
+    text-align: center;
+    padding-block: 10%;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .comida-ufscar{
@@ -269,14 +302,22 @@ header > img{
     width: fit-content;
 }
 
+#sao-carlos ul{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#dicas ul{
+    grid-template-columns: repeat(4, 1fr);
+}
+
 @media only screen and (max-width: 1600px) {
     #curso ul{
         list-style: none;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin-bottom: 2.12rem;
-        gap: 5% 0;
-        height: 50rem;
+        gap: 1vh 1vw;
+        height: fit-content;
     }
 
     #siglas ul{
