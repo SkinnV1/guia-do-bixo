@@ -227,12 +227,14 @@ header > img{
     height: 35rem;
     width: 100%;
     padding-inline: 10vw;
+    margin-block: 5rem 6rem;
 }
 
 .grupos-extensao ul{
     grid-template-columns: repeat(2, 1fr);
     gap: 1%;
-    position:absolute
+    position: relative;
+    top: -4.5vh;
 }
 
 .grupos-extensao ul li{
