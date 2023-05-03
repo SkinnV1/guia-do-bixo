@@ -20,6 +20,10 @@ h2{
     margin-block: 34px;
 }
 
+#siglas h2, #dicas h2, #sao-carlos h2, #ufscar h2{
+    color: white;
+}
+
 h3{
     color: #003764;
     font-size: 25px;
@@ -61,7 +65,7 @@ ul{
     margin-block: 2.12rem;
 }
 
-ul li{
+ul > li{
     background-color: #f9f3ef;
     height: 230px;
     width: 400px;
@@ -230,6 +234,10 @@ header > img{
     margin-block: 5rem 6rem;
 }
 
+.grupos-extensao a{
+    height: fit-content;
+}
+
 .grupos-extensao ul{
     grid-template-columns: repeat(2, 1fr);
     gap: 1%;
@@ -241,10 +249,17 @@ header > img{
     width: fit-content;
     height: 20rem;
     padding: 1rem;
+    background-color: white;
+    
 }
 
 .grupos-extensao li p{
  font-size: 13px;
+}
+
+.extra{
+    display: flex;
+    gap: 2vw;
 }
 
 .ic ul{
@@ -267,49 +282,64 @@ header > img{
 }
 
 .comida-ufscar{
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     height: 100%;
     gap: 1%;
-    box-shadow: none;
+    gap: 2em 0;
 }
 
 .comida-ufscar li{
     background-color: white;
+    height: 22em;
 }
 
-.ru{
-    grid-row-start: 1;
-    grid-row-end: 3;
-
-    grid-column-end: 2;
-
-    height: fit-content;
-}
-
-.pq{
-    grid-row-end: 2;
-
-    grid-column-start: 2;
-    grid-column-end: 4;
-    width: fit-content;
-}
-
-.lu{
-    grid-row-start: 2;
-    grid-row-end: 3;
-
-    grid-column-start: 2;
-    grid-column-end: 4;
-    width: fit-content;
+#sao-carlos > p, #sao-carlos > h3{
+    color: white;
 }
 
 #sao-carlos ul{
     grid-template-columns: repeat(3, 1fr);
 }
 
-#dicas ul{
-    grid-template-columns: repeat(4, 1fr);
+#sao-carlos li{
+    height: fit-content;
+    width: fit-content;
+
+}
+
+#dicas > ul{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#tutoriais ul{
+    list-style: circle;
+}
+
+#dicas h3{
+    margin: 0;
+}
+
+#dicas > ul li{
+    height: fit-content;
+}
+
+.dicas-sobrevivencia{
+    list-style-type: circle;
+    display: flex;
+    flex-direction: column;
+}
+
+.dicas-sobrevivencia h3{
+    margin: 0;
+}
+
+.dicas-sobrevivencia > li{
+    all: initial;
+
+}
+
+#dicas ol li{
+    font-size: 12px;
 }
 
 @media only screen and (max-width: 1600px) {
