@@ -134,6 +134,7 @@ header > img{
     background-color: #fff;
     margin-inline: 10vw;
     padding: 4vh 3vw;
+    gap: 0 1%;
 }
 
 .intro > section{
@@ -211,7 +212,7 @@ header > img{
 
 #siglas ul li{
     background-color: #fff;
-    height: 28rem;
+    height: 100%;
     width: 18vw;
     padding: 1.3rem;
     box-shadow: none;
@@ -227,10 +228,10 @@ header > img{
 
 .grupos-extensao{
     background-color: #ff7f40;
-    height: 35rem;
+    height: 100%;
     width: 100%;
     padding-inline: 10vw;
-    margin-block: 6rem;
+    margin-block: 7rem;
 }
 
 .grupos-extensao a{
@@ -240,20 +241,27 @@ header > img{
 .grupos-extensao ul{
     grid-template-columns: repeat(2, 1fr);
     gap: 2em;
-    position: relative;
-    top: -4.5vh;
+    margin-inline: auto;
+    width: 85%;
+}
+
+.grupos-extensao h4{
+    margin-bottom: 1em;
 }
 
 .grupos-extensao ul li{
-    width: fit-content;
-    height: 20rem;
-    padding: 1rem;
+    height: 100%;
+    padding: 2rem;
     background-color: white;
     
 }
 
 .grupos-extensao li p{
- font-size: 13px;
+ font-size: 15px;
+}
+
+.extra{
+    
 }
 
 .extra{
@@ -279,6 +287,8 @@ header > img{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    text-align: center;
+
 }
 
 .figure{
@@ -300,7 +310,8 @@ header > img{
     grid-row-end: 3;
     align-self: baseline;
     justify-content: center;
-    margin-block: 0;
+    margin-block: auto;
+
 }
 
 .comida-ufscar{
@@ -323,6 +334,9 @@ header > img{
     gap: 2em;
 }
 
+#sao-carlos h3{
+    margin-top: 30px;
+}
 
 #sao-carlos li{
     height: 100%;
@@ -412,6 +426,8 @@ header > img{
     padding: 0;
     box-shadow: none;
     margin-bottom: 1em;
+    font-size: 17px;
+
 }
 
 #dicas h3{
@@ -469,13 +485,12 @@ footer section{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         margin-bottom: 2.12rem;
-        gap: 1%;
-        height: 177rem;
+      
     }
 
     #siglas ul li{
         background-color: #fff;
-        height: 28rem;
+        height: 100%;
         width: 24vw;
         padding: 1.3rem;
         box-shadow: none;
@@ -486,6 +501,34 @@ footer section{
         height: 100%;
         gap: 1%;
         gap: 2em;
+    }
+}
+
+@media only screen and (max-width: 1080px){
+    #siglas ul li {
+        background-color: #fff;
+        height: 100%;
+        width: 100%;
+        padding: 1.3rem;
+        box-shadow: none;
+    }
+
+    #siglas ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 2.12rem;
+        gap: 1em;
+    }
+
+    .mapa {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mapa figure{
+        margin-inline: auto;
+        margin-top: 20px;
     }
 }
 
@@ -508,7 +551,15 @@ footer section{
         grid-template-columns: repeat(3, 1fr);
         gap: 2em;
     }
+
+    #siglas ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 2.12rem;
+    }
 }
+
 
 @media only screen and (max-width: 675px){
     #sao-carlos ul{
