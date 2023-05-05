@@ -342,6 +342,7 @@ header > img{
     padding: 25px;
     box-shadow: none;
     border: none;
+    background-color: white;
 }
 
 .hino{
@@ -353,6 +354,7 @@ header > img{
 
 .hino p{
     width: 46%;
+    padding: 1em;
     background-color: #f9f3ef;
     padding: 1vw;
     text-align: center;
@@ -454,6 +456,7 @@ header > img{
     grid-template-columns: repeat(2, 1fr); 
     width: 90%; 
     margin-inline: auto;
+    gap: 2em;
 }
 
 .dicas-sobrevivencia{
@@ -568,10 +571,12 @@ footer section{
         flex-direction: column;
         align-items: center;
         row-gap: 2em;
+        
     }
 
     .hino p{
         width: 90%;
+        padding: 1em;
     }
 }
 
@@ -604,14 +609,13 @@ footer section{
     .recomendacao{
         grid-template-columns: 1fr;
         row-gap: 2em;
-        width: 60%;
         margin-inline: auto;
     }
 
     .grupos-extensao ul {
         grid-template-columns: 1fr;
         gap: 2em;
-        width: 85%;
+        width: 100%;
     }
 
     #curso figure {
@@ -668,6 +672,19 @@ footer section{
         height: 100%;
         width: 60%;
         padding: 2em 1em;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    footer section{
+        width: 100%;
+    }
+
+    .intro section{
+        width: 100%;
+        margin-inline-start: 0;
     }
 }
 
