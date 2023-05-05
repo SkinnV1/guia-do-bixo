@@ -263,8 +263,7 @@ header > img{
 }
 
 .extra{
-    
-}
+    }
 
 .ic ul{
     display: flex;
@@ -308,6 +307,8 @@ header > img{
     align-self: baseline;
     justify-content: center;
     margin-block: auto;
+
+
 }
 
 .comida-ufscar{
@@ -418,6 +419,7 @@ header > img{
 .tutorial li{
     height: fit-content;
     background-color: white;
+
     border: none;
     padding: 0;
     box-shadow: none;
@@ -512,7 +514,7 @@ footer section{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         margin-bottom: 2.12rem;
-        
+       
     }
 
     #siglas ul li{
