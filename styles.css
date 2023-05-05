@@ -68,8 +68,6 @@ ul{
 
 ul > li{
     background-color: #f9f3ef;
-    height: 230px;
-    width: 100%;
     padding: 40px 25px;
     border: solid;
     box-shadow: 10px 10px 0px 0px #00294b;
@@ -201,6 +199,10 @@ header > img{
     font-family: 'inter';
 }
 
+.mapa-disciplina{
+    width: 50%;
+}
+
 #siglas {
     height: fit-content;
 }
@@ -261,12 +263,7 @@ header > img{
 }
 
 .extra{
-    
-}
-
-.extra{
-    
-}
+    }
 
 .ic ul{
     display: flex;
@@ -288,7 +285,6 @@ header > img{
     align-items: center;
     justify-content: space-around;
     text-align: center;
-
 }
 
 .figure{
@@ -312,6 +308,7 @@ header > img{
     justify-content: center;
     margin-block: auto;
 
+
 }
 
 .comida-ufscar{
@@ -322,14 +319,14 @@ header > img{
 
 .comida-ufscar li{
     background-color: white;
-    height: 22em;
+    height: 100%;
 }
 
 #sao-carlos p, #sao-carlos > h3{
     color: white;
 }
 
-#sao-carlos ul{
+.restaurante ul{
     grid-template-columns: repeat(4, 1fr);
     gap: 2em;
 }
@@ -422,12 +419,12 @@ header > img{
 .tutorial li{
     height: fit-content;
     background-color: white;
+
     border: none;
     padding: 0;
     box-shadow: none;
     margin-bottom: 1em;
     font-size: 17px;
-
 }
 
 #dicas h3{
@@ -437,6 +434,26 @@ header > img{
 #dicas > ul li{
     height: 100%;
     font-family: 'inter';
+    font-size: 17px;
+}
+
+.recomendacao{
+    gap: 2em;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cronograma{
+    width: 40%;
+}
+
+.festas{
+    width: 70%;
+}
+
+.transporte{
+    grid-template-columns: repeat(2, 1fr); 
+    width: 90%; 
+    margin-inline: auto;
 }
 
 .dicas-sobrevivencia{
@@ -457,6 +474,13 @@ header > img{
     margin-bottom: 1em;
 }
 
+.service{
+    grid-template-columns: repeat(3, 1fr); 
+    width: 85%;
+    margin-inline: auto;
+    gap: 2em;
+}
+
 #dicas ol li{
     font-size: 12px;
 }
@@ -468,6 +492,11 @@ footer{
 
 footer section{
     width: 50%;
+}
+
+.contatos{
+    display: flex; 
+    flex-direction: column; 
 }
 
 @media only screen and (max-width: 1600px) {
@@ -485,7 +514,7 @@ footer section{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         margin-bottom: 2.12rem;
-      
+       
     }
 
     #siglas ul li{
@@ -547,7 +576,7 @@ footer section{
 }
 
 @media only screen and (max-width: 950px){
-    #sao-carlos ul{
+    .restaurante ul{
         grid-template-columns: repeat(3, 1fr);
         gap: 2em;
     }
@@ -560,14 +589,84 @@ footer section{
     }
 }
 
-
 @media only screen and (max-width: 675px){
-    #sao-carlos ul{
-        grid-template-columns: repeat(2, 1fr);
+    .festas{
+        width: 100%;
+    }
+
+    .service{
+        grid-template-columns: 1fr; 
+        width: 85%;
+        margin-inline: auto;
         gap: 2em;
     }
 
     .recomendacao{
+        grid-template-columns: 1fr;
+        row-gap: 2em;
+        width: 60%;
+        margin-inline: auto;
+    }
+
+    .grupos-extensao ul {
+        grid-template-columns: 1fr;
+        gap: 2em;
+        width: 85%;
+    }
+
+    #curso figure {
+        display: flex;
+        flex-direction: column;
+        margin-block: 25px;
+        gap: 2em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #dicas > ul {
+        grid-template-columns: 1fr;
+        gap: 2em;
+    }
+
+    .transporte{
+        grid-template-columns: 1fr; 
+        width: 90%; 
+        margin-inline: auto;
+        gap: 2em;
+    }
+
+    .mapa-disciplina{
+        width: 70%;
+    }
+
+    .cronograma{
+        width: 70%;
+    }
+
+    .restaurante ul{
         grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
+    }
+
+    #curso ul{
+        grid-template-columns: 1fr;
+    }
+    #curso ul li{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    #siglas ul{
+        grid-template-columns: 1fr;
+    }
+
+    .comida-ufscar{
+        grid-template-columns: 1fr;
+    }
+
+    .ic ul{
+        flex-direction: column;
+        gap: 2em;
     }
 }
