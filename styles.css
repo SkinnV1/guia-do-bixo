@@ -1,3 +1,4 @@
+
 * {
     padding: 0;
     margin: 0;
@@ -18,6 +19,10 @@ h2{
     font-weight: 700;
     text-transform: uppercase;
     margin-block: 34px;
+}
+
+#siglas h2, #dicas h2, #sao-carlos h2, #ufscar h2{
+    color: white;
 }
 
 h3{
@@ -61,10 +66,10 @@ ul{
     margin-block: 2.12rem;
 }
 
-ul li{
+ul > li{
     background-color: #f9f3ef;
     height: 230px;
-    width: 400px;
+    width: 100%;
     padding: 40px 25px;
     border: solid;
     box-shadow: 10px 10px 0px 0px #00294b;
@@ -78,7 +83,6 @@ button{
 }
 
 button a{
-    text-decoration-line: none;
     display: block;
     font-size: 23px;
     font-weight: 700;
@@ -121,8 +125,8 @@ header > img{
 
 #introducao, #siglas{
     
-    padding-top: 46px;
-    padding-bottom: 64px;
+    padding-top: 54px;
+    padding-bottom: 54px;
 }
 
 .intro {
@@ -140,8 +144,7 @@ header > img{
 
 .intro > aside{
     background-color: #f9f3ef;
-    padding-block-start: 5rem;
-    padding: 137px 40px 37px 30px;
+    padding: 2%;
     height: 333px;
     width: 333px;
     margin: auto;
@@ -152,13 +155,13 @@ header > img{
 }
 
 #curso{
-    margin-inline: 10vw;
     margin-block: 54px;
 }
 
 #curso ul{
+    width: 90%;
     height: fit-content;
-    gap: 5vh 0%;
+    gap: 5vh;
     grid-template-columns: repeat(3, 1fr);
 }
 
@@ -166,7 +169,7 @@ header > img{
     display: flex;
     margin-block: 25px;
     align-content: space-between;
-    gap: 5%;
+    gap: 2em;
     justify-content: center;
     align-items: center;
 }
@@ -227,29 +230,42 @@ header > img{
     height: 35rem;
     width: 100%;
     padding-inline: 10vw;
+    margin-block: 6rem;
+}
+
+.grupos-extensao a{
+    height: fit-content;
 }
 
 .grupos-extensao ul{
     grid-template-columns: repeat(2, 1fr);
-    gap: 1%;
-    position:absolute
+    gap: 2em;
+    position: relative;
+    top: -4.5vh;
 }
 
 .grupos-extensao ul li{
     width: fit-content;
     height: 20rem;
     padding: 1rem;
+    background-color: white;
+    
 }
 
 .grupos-extensao li p{
  font-size: 13px;
 }
 
+.extra{
+    
+}
+
 .ic ul{
     display: flex;
-    width: 100%;
+    width: 90%;
     justify-content: space-evenly;
     gap: 2vw;
+    margin-inline: auto;
 }
 
 .ic ul li{
@@ -258,56 +274,184 @@ header > img{
 }
 
 .ic li a{
-    text-align: center;
-    padding-block: 10%;
     font-size: 20px;
     font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.figure{
+    display: flex;
+    justify-content: space-around;
+    margin-block: 3vh;
+}
+
+.mapa{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1vw;
+}
+
+.mapa > figure{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    align-self: baseline;
+    justify-content: center;
+    margin-block: 0;
 }
 
 .comida-ufscar{
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     height: 100%;
-    gap: 1%;
-    box-shadow: none;
+    gap: 2em;
 }
 
 .comida-ufscar li{
     background-color: white;
+    height: 22em;
 }
 
-.ru{
-    grid-row-start: 1;
-    grid-row-end: 3;
-
-    grid-column-end: 2;
-
-    height: fit-content;
-}
-
-.pq{
-    grid-row-end: 2;
-
-    grid-column-start: 2;
-    grid-column-end: 4;
-    width: fit-content;
-}
-
-.lu{
-    grid-row-start: 2;
-    grid-row-end: 3;
-
-    grid-column-start: 2;
-    grid-column-end: 4;
-    width: fit-content;
+#sao-carlos p, #sao-carlos > h3{
+    color: white;
 }
 
 #sao-carlos ul{
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
 }
 
-#dicas ul{
-    grid-template-columns: repeat(4, 1fr);
+
+#sao-carlos li{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    box-shadow: none;
+    border: none;
+}
+
+.hino{
+    justify-content: space-around;
+    display: flex;
+    margin-top: 30px;
+}
+
+
+.hino p{
+    width: 46%;
+    background-color: #f9f3ef;
+    padding: 1vw;
+    text-align: center;
+    border: solid;
+    box-shadow: 10px 10px 0px 0px rgba(0,41,75,1);
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(0,41,75,1);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(0,41,75,1);
+}
+
+#dicas > ul{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+}
+
+.circle{
+    height: 50px;
+    clip-path: circle(25px);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.localizacao h4{
+    font-size: 17px;
+    color:#003764;
+}
+
+.localizacao span{
+    color: #003764;
+    font-size: 12px;
+}
+
+
+
+.bar{
+    background-color: orange;
+}
+
+.burger{
+    background-color: #003764;
+}
+
+.comida{
+    background-color: green;
+}
+
+.pizza{
+    background-color: red;
+}
+
+.doce{
+    background-color: purple;
+}
+
+.util, .mercado, .farmacia, .academia{
+    background-color: #FE5D06;
+}
+
+#tutoriais ul{
+    list-style: disc;
+}
+
+.tutorial li{
+    height: fit-content;
+    background-color: white;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+    margin-bottom: 1em;
+}
+
+#dicas h3{
+    margin: 0;
+}
+
+#dicas > ul li{
+    height: 100%;
+    font-family: 'inter';
+}
+
+.dicas-sobrevivencia{
+    list-style-type: disc;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+}
+
+.dicas-sobrevivencia h3{
+    margin-left: 0;
+}
+
+.dicas-sobrevivencia > li{
+    border: none;
+    padding: 0;
+    box-shadow: none;
+    margin-bottom: 1em;
+}
+
+#dicas ol li{
+    font-size: 12px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+}
+
+footer section{
+    width: 50%;
 }
 
 @media only screen and (max-width: 1600px) {
@@ -316,7 +460,7 @@ header > img{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin-bottom: 2.12rem;
-        gap: 1vh 1vw;
+        gap: 2em;
         height: fit-content;
     }
 
@@ -326,7 +470,7 @@ header > img{
         grid-template-columns: repeat(3, 1fr);
         margin-bottom: 2.12rem;
         gap: 1%;
-        height: fit-content;
+        height: 177rem;
     }
 
     #siglas ul li{
@@ -335,5 +479,44 @@ header > img{
         width: 24vw;
         padding: 1.3rem;
         box-shadow: none;
+    }
+
+    .comida-ufscar{
+        grid-template-columns: repeat(2, 1fr);
+        height: 100%;
+        gap: 1%;
+        gap: 2em;
+    }
+}
+
+@media only screen and (max-width: 720px){
+    .hino{
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2em;
+    }
+
+    .hino p{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    #sao-carlos ul{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2em;
+    }
+}
+
+@media only screen and (max-width: 675px){
+    #sao-carlos ul{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
+    }
+
+    .recomendacao{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
