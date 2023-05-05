@@ -134,6 +134,7 @@ header > img{
     background-color: #fff;
     margin-inline: 10vw;
     padding: 4vh 3vw;
+    gap: 0 1%;
 }
 
 .intro > section{
@@ -227,7 +228,7 @@ header > img{
 
 .grupos-extensao{
     background-color: #ff7f40;
-    height: 35rem;
+    height: 100%;
     width: 100%;
     padding-inline: 10vw;
     margin-block: 7rem;
@@ -240,8 +241,8 @@ header > img{
 .grupos-extensao ul{
     grid-template-columns: repeat(2, 1fr);
     gap: 2em;
-    position: relative;
-    top: -12%;
+    margin-inline: auto;
+    width: 85%;
 }
 
 .grupos-extensao h4{
@@ -249,7 +250,7 @@ header > img{
 }
 
 .grupos-extensao ul li{
-    height: 20rem;
+    height: 100%;
     padding: 2rem;
     background-color: white;
     
@@ -282,6 +283,7 @@ header > img{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    text-align: center;
 }
 
 .figure{
@@ -303,7 +305,7 @@ header > img{
     grid-row-end: 3;
     align-self: baseline;
     justify-content: center;
-    margin-block: 0;
+    margin-block: auto;
 }
 
 .comida-ufscar{
@@ -326,6 +328,9 @@ header > img{
     gap: 2em;
 }
 
+#sao-carlos h3{
+    margin-top: 30px;
+}
 
 #sao-carlos li{
     height: 100%;
@@ -508,6 +513,16 @@ footer section{
         margin-bottom: 2.12rem;
         gap: 1em;
     }
+
+    .mapa {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mapa figure{
+        margin-inline: auto;
+        margin-top: 20px;
+    }
 }
 
 @media only screen and (max-width: 720px){
@@ -535,7 +550,6 @@ footer section{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin-bottom: 2.12rem;
-        gap: ;
     }
 }
 
