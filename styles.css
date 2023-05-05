@@ -264,6 +264,10 @@ header > img{
     
 }
 
+.extra{
+    
+}
+
 .ic ul{
     display: flex;
     width: 90%;
@@ -284,6 +288,7 @@ header > img{
     align-items: center;
     justify-content: space-around;
     text-align: center;
+
 }
 
 .figure{
@@ -306,6 +311,7 @@ header > img{
     align-self: baseline;
     justify-content: center;
     margin-block: auto;
+
 }
 
 .comida-ufscar{
@@ -421,6 +427,7 @@ header > img{
     box-shadow: none;
     margin-bottom: 1em;
     font-size: 17px;
+
 }
 
 #dicas h3{
@@ -478,7 +485,7 @@ footer section{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         margin-bottom: 2.12rem;
-        
+      
     }
 
     #siglas ul li{
@@ -552,6 +559,7 @@ footer section{
         margin-bottom: 2.12rem;
     }
 }
+
 
 @media only screen and (max-width: 675px){
     #sao-carlos ul{
