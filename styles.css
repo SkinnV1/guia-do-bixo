@@ -462,6 +462,10 @@ header > img{
     gap: 2em;
 }
 
+.transporte span{
+    font-size: 17px;
+}
+
 .dicas-sobrevivencia{
     list-style-type: disc;
     display: flex;
