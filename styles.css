@@ -273,9 +273,12 @@ header > img{
     margin-inline: auto;
 }
 
-.ic ul li{
+
+
+.ic ul li {
     padding: 0;
     height: 100px;
+    width: 100%;
 }
 
 .ic li a{
