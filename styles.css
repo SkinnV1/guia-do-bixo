@@ -211,7 +211,7 @@ header > img{
 
 #siglas ul li{
     background-color: #fff;
-    height: 28rem;
+    height: 100%;
     width: 18vw;
     padding: 1.3rem;
     box-shadow: none;
@@ -230,7 +230,7 @@ header > img{
     height: 35rem;
     width: 100%;
     padding-inline: 10vw;
-    margin-block: 6rem;
+    margin-block: 7rem;
 }
 
 .grupos-extensao a{
@@ -241,19 +241,22 @@ header > img{
     grid-template-columns: repeat(2, 1fr);
     gap: 2em;
     position: relative;
-    top: -4.5vh;
+    top: -12%;
+}
+
+.grupos-extensao h4{
+    margin-bottom: 1em;
 }
 
 .grupos-extensao ul li{
-    width: fit-content;
     height: 20rem;
-    padding: 1rem;
+    padding: 2rem;
     background-color: white;
     
 }
 
 .grupos-extensao li p{
- font-size: 13px;
+ font-size: 15px;
 }
 
 .extra{
@@ -412,6 +415,7 @@ header > img{
     padding: 0;
     box-shadow: none;
     margin-bottom: 1em;
+    font-size: 17px;
 }
 
 #dicas h3{
@@ -469,13 +473,12 @@ footer section{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         margin-bottom: 2.12rem;
-        gap: 1%;
-        height: 177rem;
+        
     }
 
     #siglas ul li{
         background-color: #fff;
-        height: 28rem;
+        height: 100%;
         width: 24vw;
         padding: 1.3rem;
         box-shadow: none;
@@ -486,6 +489,24 @@ footer section{
         height: 100%;
         gap: 1%;
         gap: 2em;
+    }
+}
+
+@media only screen and (max-width: 1080px){
+    #siglas ul li {
+        background-color: #fff;
+        height: 100%;
+        width: 100%;
+        padding: 1.3rem;
+        box-shadow: none;
+    }
+
+    #siglas ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 2.12rem;
+        gap: 1em;
     }
 }
 
@@ -507,6 +528,14 @@ footer section{
     #sao-carlos ul{
         grid-template-columns: repeat(3, 1fr);
         gap: 2em;
+    }
+
+    #siglas ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 2.12rem;
+        gap: ;
     }
 }
 
