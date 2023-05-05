@@ -654,6 +654,21 @@ footer section{
     #curso ul li{
         width: 100%;
     }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        margin-inline: 10vw;
+        padding: 4vh 3vw;
+        gap: 0 1%;
+    }
+
+    .intro aside{
+        height: 100%;
+        width: 60%;
+        padding: 2em 1em;
+    }
 }
 
 @media only screen and (max-width: 550px){
@@ -668,5 +683,17 @@ footer section{
     .ic ul{
         flex-direction: column;
         gap: 2em;
+    }
+
+    .intro aside{
+        height: 100%;
+        width: 100%;
+        padding: 2em 1em;
+    }
+}
+
+@media only screen and (max-width: 430px){
+    .restaurante ul{
+        grid-template-columns: 1fr;
     }
 }
