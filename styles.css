@@ -94,9 +94,10 @@ a{
     text-decoration-line: none;
     display: block;
     height: 100%;
-    
     font-family: 'inter';
 }
+
+
 
 ol li{
     margin: .5rem;
@@ -184,9 +185,14 @@ header > img{
     margin-block: 30px;
     height: 60px;
     width: 200px;
+    transition: .25s;
     box-shadow: 10px 10px 0px 0px rgba(0,41,75,1);
     -webkit-box-shadow: 10px 10px 0px 0px rgba(0,41,75,1);
     -moz-box-shadow: 10px 10px 0px 0px rgba(0,41,75,1);
+}
+
+.botao:hover{
+    background-color: rgb(245, 245, 245);
 }
 
 .botao a {
@@ -197,6 +203,10 @@ header > img{
     height: 100%;
     padding-block: 7%;
     font-family: 'inter';
+}
+
+.botao a:hover{
+    text-decoration: underline;
 }
 
 .mapa-disciplina{
@@ -224,6 +234,10 @@ header > img{
     padding-block: 0;
 }
 
+#siglas a h5:hover{
+    text-decoration: underline;
+}
+
 #siglas h5{
     margin: 0;
 }
@@ -238,6 +252,10 @@ header > img{
 
 .grupos-extensao a{
     height: fit-content;
+}
+
+.grupos-extensao a:hover{
+    text-decoration: underline;
 }
 
 .grupos-extensao ul{
@@ -288,6 +306,12 @@ header > img{
     align-items: center;
     justify-content: space-around;
     text-align: center;
+    transition: .25s;
+}
+
+.ic li a:hover{
+    text-decoration: underline;
+    background-color: rgba(238, 228, 222, 0.945);
 }
 
 .figure{
@@ -419,6 +443,7 @@ header > img{
 
 #tutoriais ul{
     list-style: disc;
+    justify-items:start;
 }
 
 .tutorial li{
